@@ -31,17 +31,17 @@ export default function Dice(props) {
   }
 
   const dice = <div
-    className="btn"
-    key={props.index}
-    onClick={props.hold}
-  >
-    <FontAwesomeIcon
-      icon={number}
-      size="2x"
-      color={props.isHeld ? "green" : "gray"}
-      className="icon"
-    />
-  </div>
+                  className="btn"
+                  key={props.index}
+                  onClick={props.hold}
+                >
+                  <FontAwesomeIcon
+                    icon={number}
+                    size="2x"
+                    color={props.isHeld ? "green" : "gray"}
+                    className="icon"
+                  />
+                </div>
 
   return(
   <div className="dices">
