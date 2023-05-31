@@ -2,6 +2,8 @@ import * as React from "react"
 import "./Tenzies.css"
 import TenzieRules from "./TenzieRules"
 import Dice from "./Dice"
+import Confetti from 'react-confetti'
+
 
 export default function Tenzies(props) {
 
@@ -75,7 +77,13 @@ export default function Tenzies(props) {
         bestScore={bestScore}
       />
       { tenzies ?
-      <h1>Congratulation you won</h1> :
+      <div>
+        <h1>Congratulation you won</h1>
+        <Confetti
+          width={window.innerWidth || 300	}
+          height={window.innerHeight || 200	}
+        	/>
+      </div> :
       <div className="dice-box">
         {Dices}
       </div>
