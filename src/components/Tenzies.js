@@ -74,12 +74,15 @@ export default function Tenzies(props) {
         numberOfRoll={numOfRoll}
         bestScore={bestScore}
       />
+      { tenzies ?
+      <h1>Congratulation you won</h1> :
       <div className="dice-box">
         {Dices}
       </div>
+      }
       <div className="tenzie-btn">
         <button className="roll" onClick={roll} >{tenzies ? "Start new game" : "Roll the dices !"}</button>
-        <button className="reset" onClick={reset}>Reset your best  score</button>
+        { bestScore < 99 && <button className="reset" onClick={reset}>Reset your best  score</button> }
       </div>
     </div>
   )
