@@ -94,7 +94,6 @@ export default function Rock(props) {
 
   const round = gameScore.draw ? <p>Draw</p> : <p>You {gameScore.round ? "won" : "loose"}</p>
 
-  console.log(player)
   return (
     <main>
       <div className="rock-rules">
