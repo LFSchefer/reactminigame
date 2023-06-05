@@ -4,6 +4,9 @@ import Footer from './components/Footer';
 import Tenzies from './components/Tenzies';
 import Rock from './components/Rock';
 
+// TODO
+// btn => Play : Hide
+
 function App() {
   return (
     <div className="App">

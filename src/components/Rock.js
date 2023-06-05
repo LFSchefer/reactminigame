@@ -92,19 +92,33 @@ export default function Rock(props) {
     }
   },[gameScore])
 
-  const round = gameScore.draw ? <p>Draw</p> : <p>You {gameScore.round ? "won" : "loose"}</p>
+  const restScore =() => {
+    setGameScore({playerScore: 0, cpuScore: 0, draw: false})
+  }
+
+  const roundText = gameScore.round ? "won-text" : "loose-text"
+
+  const round = gameScore.draw ? <div className="draw-text">Draw</div> : <div className={roundText}>You {gameScore.round ? "won" : "loose"}</div>
+
+  const displayScore = gameScore.playerScore === 0 && gameScore.cpuScore === 0 ?
+   <div></div> :
+   <div>
+    <div className="player-cpu">
+      <p>You:</p> <div className="player-cpu-disp">{player}</div> <p> | Cpu: </p> <div className="player-cpu-disp">{cpu}</div>
+    </div>
+    {round}
+    </div>
 
   return (
     <main>
       <div className="rock-rules">
         <h1>Rock | Paper | Cisor</h1>
         <p>Please choose to start playing</p>
-        <p>5 round to win a game</p>
-        <p>round: You {gameScore.playerScore} | Cpu {gameScore.cpuScore}</p>
+        <p>First to 5 win a game</p>
+        <p>Round: <strong>You {gameScore.playerScore} | Cpu {gameScore.cpuScore}</strong></p>
       </div>
       <div className="result">
-        <p>You: {player} | Cpu: {cpu}</p>
-        {round}
+        {displayScore}
       </div>
       <div className="rock-game">
         <div className="rock-btn">
@@ -112,6 +126,7 @@ export default function Rock(props) {
           <button onClick={() => tirage("Paper")}>Paper</button>
           <button onClick={() => tirage("Cisor")}>Cisor</button>
         </div>
+        <button className="reset-btn" onClick={restScore}>Reset</button>
       </div>
     </main>
   )
