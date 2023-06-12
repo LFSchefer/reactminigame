@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Tenzies from './components/Tenzies';
 import Rock from './components/Rock';
+import Taquin from './components/Taquin';
 
 // TODO
 // btn => Play : Hide
@@ -15,6 +16,8 @@ function App() {
       <Rock/>
       <hr/>
       <Tenzies/>
+      <hr/>
+      <Taquin/>
       <hr/>
       <Footer/>
     </div>
