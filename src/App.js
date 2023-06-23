@@ -7,7 +7,8 @@ import Taquin from './components/Taquin';
 
 // TODO
 // btn => Play : Hide
-//  taquin game 
+//  taquin game
+
 
 function App() {
   return (
