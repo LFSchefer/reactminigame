@@ -3,11 +3,31 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Rock from './components/Rock';
+import Taquin from './components/Taquin';
+import Tenzies from './components/Tenzies';
+
+const Routing = () => {
+  return(
+    <Router>
+      <Navbar/>
+      <Routes>
+        <Route exact path="/" element={App} />
+        <Route path="/rock" element={Rock} />
+        <Route path="/tenzies" element={Tenzies} />
+      </Routes>
+      <Footer/>
+    </Router>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Routing />
   </React.StrictMode>
 );
 

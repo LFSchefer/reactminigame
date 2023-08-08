@@ -5,6 +5,7 @@ import Tenzies from './components/Tenzies';
 import Rock from './components/Rock';
 import Taquin from './components/Taquin';
 
+
 // TODO
 // btn => Play : Hide
 //  taquin game
@@ -13,7 +14,7 @@ import Taquin from './components/Taquin';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <hr/>
       <Rock/>
       <hr/>
@@ -21,7 +22,7 @@ function App() {
       <hr/>
       <Taquin/>
       <hr/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 }
