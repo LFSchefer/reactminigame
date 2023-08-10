@@ -14,25 +14,6 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 //  taquin game
 
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <Navbar/>
-//       <hr/>
-//       <Rock/>
-//       <hr/>
-//       <Tenzies/>
-//       <hr/>
-//       <Taquin/>
-//       <hr/>
-//       <Footer/>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 export default function App() {
   return (
     <div>

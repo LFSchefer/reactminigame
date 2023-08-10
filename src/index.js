@@ -13,27 +13,6 @@ import Tenzies from './components/Tenzies';
 import { BrowserRouter } from "react-router-dom";
 
 
-// const Routing = () => {
-//   return(
-//     <Router>
-//       <Navbar/>
-//       <Routes>
-//         <Route exact path="/" element={App} />
-//         <Route path="/rock" element={Rock} />
-//         <Route path="/tenzies" element={Tenzies} />
-//       </Routes>
-//       <Footer/>
-//     </Router>
-//   )
-// }
-
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//   <React.StrictMode>
-//     <Routing />
-//   </React.StrictMode>
-// );
-
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
