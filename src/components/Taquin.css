@@ -1,0 +1,18 @@
+.taq-container {
+  height: 500px;
+  width: 500px;
+  background-color: rgba(0, 0, 0, 0.086);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  width: 50%;
+  margin: auto;
+}
+
+.num-btn {
+  background-color: aquamarine;
+  margin: 10px;
+}

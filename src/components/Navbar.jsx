@@ -21,7 +21,7 @@ export default function Navbar(props) {
           <Link to="/tenzies">Tenzies</Link>
         </li>
         <li>
-          <Link to="/navbar">Navbar</Link>
+          <Link to="/taquin">Taquin</Link>
         </li>
         <li>
           <Link to="/nothing-here">Nothing Here</Link>

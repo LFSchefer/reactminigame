@@ -13,11 +13,12 @@ import { Routes, Route, Outlet, Link } from "react-router-dom";
 // TODO
 // btn => Play : Hide
 //  taquin game
+// README.MD
 
 
 export default function App() {
   return (
-    <div>
+    <div className='App'>
       <h1>Basic Example</h1>
 
       <p>
@@ -36,6 +37,7 @@ export default function App() {
           <Route index element={<AllGames />} />
           <Route path="navbar" element={<Navbar />} />
           <Route path="Tenzies" element={<Tenzies />} />
+          <Route path="Taquin" element={<Taquin />} />
           <Route path='Rock' element={<Rock />} />
 
           {/* Using path="*"" means "match anything", so this route
