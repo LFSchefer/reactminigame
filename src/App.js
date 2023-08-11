@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Tenzies from './components/Tenzies';
 import Rock from './components/Rock';
 import Taquin from './components/Taquin';
+import AllGames from './components/AllGames';
 
 import { Routes, Route, Outlet, Link } from "react-router-dom";
 
@@ -32,7 +33,7 @@ export default function App() {
             parent route elements. See the note about <Outlet> below. */}
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route index element={<Home />} />
+          <Route index element={<AllGames />} />
           <Route path="navbar" element={<Navbar />} />
           <Route path="Tenzies" element={<Tenzies />} />
           <Route path='Rock' element={<Rock />} />
@@ -43,6 +44,7 @@ export default function App() {
           <Route path="*" element={<NoMatch />} />
         </Route>
       </Routes>
+      <Footer/>
     </div>
   );
 }

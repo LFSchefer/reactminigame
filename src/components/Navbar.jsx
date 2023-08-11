@@ -7,12 +7,12 @@ import { Routes, Route, Outlet } from "react-router-dom";
 
 export default function Navbar(props) {
   return (
-    
+
     <div className="navbar">
     <nav>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">All Games</Link>
         </li>
         <li>
           <Link to="/rock">Rock</Link>

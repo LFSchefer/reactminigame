@@ -28,6 +28,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   margin: 30px auto 10px auto;
+  display: flex;
 }
 
 .player-cpu {
@@ -66,4 +67,9 @@
   padding: 6px 12px;
   margin: 5px auto;
   width: fit-content;
+}
+
+.rock-rules {
+  margin: 0 auto;
+  text-align: center;
 }
