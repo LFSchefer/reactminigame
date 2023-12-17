@@ -32,6 +32,7 @@ export default function Tenzies(props) {
         localStorage.setItem('bestScore', `${numOfRoll}`)
         setBestScore(numOfRoll)
       }
+      setNumOfRoll(0)
     }
     else {
       setAllDice( oldDice => oldDice.map( dice => (
